@@ -10,6 +10,7 @@
 #
 # Requirements:
 #   - gpg (GNU Privacy Guard) installed
+#   - git (Git Version Control System) installed
 #   - git repository
 #
 # ==============================================================================
