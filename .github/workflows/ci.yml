@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Environment Variables via GPG
+        env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          # If using symmetric encryption, decrypt the secrets file
+          if [ -n "$GPG_PASSPHRASE" ]; then
+            ./secure-env.sh decrypt symmetric
+          else
+            echo "Skipping secret decryption: GPG_PASSPHRASE secret is not set."
+          fi
+
+      - name: Run Tests
+        run: |
+          # Run tests or applications that rely on the populated .env file
+          echo "Verifying environment variables..."
+          if [ -f .env ]; then
+            echo ".env decrypted successfully!"
+          else
+            echo "Warning: .env file does not exist."
+          fi

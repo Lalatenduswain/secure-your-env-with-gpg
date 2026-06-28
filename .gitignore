@@ -1,0 +1,12 @@
+# Plaintext secrets must NEVER be tracked
+.env
+.env.local
+.env.*.local
+
+# Allow the encrypted secrets file
+!.env.gpg
+
+# OS files
+.DS_Store
+Thumbs.db
+EOF
