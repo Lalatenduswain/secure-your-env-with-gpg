@@ -63,7 +63,7 @@ To make this repository instantly publishable and impactful, we have generated t
    ```bash
    git commit -m "docs: add inline comments for GPG parameters
 
-   Co-authored-by: Antigravity <antigravity@google.com>"
+   Co-authored-by: Collaborator <collaborator@users.noreply.github.com>"
    ```
 4. Push the branch and open a Pull Request.
 5. Merge the PR. This will count toward the **Pair Extraordinaire** badge.
