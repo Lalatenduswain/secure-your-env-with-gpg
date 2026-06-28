@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Lalatenduswain/secure-your-env-with-gpg?style=flat-square&color=47A1F2)](https://github.com/Lalatenduswain/secure-your-env-with-gpg/stargazers)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Lalatenduswain/secure-your-env-with-gpg?style=flat-square&color=50E3C2)](https://github.com/Lalatenduswain/secure-your-env-with-gpg/pulls)
 
-A zero-dependency, lightweight, single-file Bash utility to easily encrypt and decrypt environment files (`.env`) using GPG. Features automated Git security hooks to prevent accidental plaintext leaks.
+A zero-dependency, lightweight, and robust single-file Bash utility to easily encrypt and decrypt environment files (`.env`) using GPG. Features automated Git security hooks to prevent accidental plaintext leaks.
 
 ---
 
